@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8992A35D1D0D3AA300E1096B /* AnimationViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8992A35C1D0D3AA300E1096B /* AnimationViewController1.m */; };
+		8992A3611D0D3AB800E1096B /* AnimationViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8992A3601D0D3AB800E1096B /* AnimationViewController2.m */; };
+		8992A3641D0D3AC000E1096B /* AnimationViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 8992A3631D0D3AC000E1096B /* AnimationViewController3.m */; };
+		8992A3671D0D3ADA00E1096B /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 8992A3661D0D3ADA00E1096B /* Math.m */; };
+		8992A36A1D0D3B1C00E1096B /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8992A3691D0D3B1B00E1096B /* UIView+SetRect.m */; };
+		8992A36D1D0D3B2E00E1096B /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8992A36C1D0D3B2E00E1096B /* UIImage+ImageEffects.m */; };
+		8992A3711D0D3B6A00E1096B /* MoreInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8992A3701D0D3B6A00E1096B /* MoreInfoView.m */; };
 		8B01FE421D03098E008F7DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01FE411D03098E008F7DD9 /* main.m */; };
 		8B01FE451D03098E008F7DD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01FE441D03098E008F7DD9 /* AppDelegate.m */; };
 		8B01FE481D03098E008F7DD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01FE471D03098E008F7DD9 /* ViewController.m */; };
@@ -35,6 +42,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8992A35B1D0D3AA300E1096B /* AnimationViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController1.h; sourceTree = "<group>"; };
+		8992A35C1D0D3AA300E1096B /* AnimationViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController1.m; sourceTree = "<group>"; };
+		8992A35F1D0D3AB800E1096B /* AnimationViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController2.h; sourceTree = "<group>"; };
+		8992A3601D0D3AB800E1096B /* AnimationViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController2.m; sourceTree = "<group>"; };
+		8992A3621D0D3AC000E1096B /* AnimationViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController3.h; sourceTree = "<group>"; };
+		8992A3631D0D3AC000E1096B /* AnimationViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController3.m; sourceTree = "<group>"; };
+		8992A3651D0D3ADA00E1096B /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		8992A3661D0D3ADA00E1096B /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		8992A3681D0D3B1B00E1096B /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		8992A3691D0D3B1B00E1096B /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		8992A36B1D0D3B2E00E1096B /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		8992A36C1D0D3B2E00E1096B /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		8992A36F1D0D3B6A00E1096B /* MoreInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfoView.h; sourceTree = "<group>"; };
+		8992A3701D0D3B6A00E1096B /* MoreInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoView.m; sourceTree = "<group>"; };
+		8992A3731D0D49D100E1096B /* LxDBAnything.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxDBAnything.h; sourceTree = "<group>"; };
 		8B01FE3D1D03098E008F7DD9 /* LLUIScrollViewAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLUIScrollViewAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B01FE411D03098E008F7DD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B01FE431D03098E008F7DD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +100,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8992A3591D0D3A3E00E1096B /* animation2 */ = {
+			isa = PBXGroup;
+			children = (
+				8992A35F1D0D3AB800E1096B /* AnimationViewController2.h */,
+				8992A3601D0D3AB800E1096B /* AnimationViewController2.m */,
+			);
+			name = animation2;
+			sourceTree = "<group>";
+		};
+		8992A35A1D0D3A4B00E1096B /* animation3 */ = {
+			isa = PBXGroup;
+			children = (
+				8992A3621D0D3AC000E1096B /* AnimationViewController3.h */,
+				8992A3631D0D3AC000E1096B /* AnimationViewController3.m */,
+			);
+			name = animation3;
+			sourceTree = "<group>";
+		};
+		8992A35E1D0D3AAB00E1096B /* CommonTools */ = {
+			isa = PBXGroup;
+			children = (
+				8992A3721D0D3B6C00E1096B /* Views */,
+				8992A36E1D0D3B3200E1096B /* Category */,
+				8992A3651D0D3ADA00E1096B /* Math.h */,
+				8992A3661D0D3ADA00E1096B /* Math.m */,
+				8992A3731D0D49D100E1096B /* LxDBAnything.h */,
+			);
+			name = CommonTools;
+			sourceTree = "<group>";
+		};
+		8992A36E1D0D3B3200E1096B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8992A36B1D0D3B2E00E1096B /* UIImage+ImageEffects.h */,
+				8992A36C1D0D3B2E00E1096B /* UIImage+ImageEffects.m */,
+				8992A3681D0D3B1B00E1096B /* UIView+SetRect.h */,
+				8992A3691D0D3B1B00E1096B /* UIView+SetRect.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		8992A3721D0D3B6C00E1096B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8992A36F1D0D3B6A00E1096B /* MoreInfoView.h */,
+				8992A3701D0D3B6A00E1096B /* MoreInfoView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		8B01FE341D03098E008F7DD9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +173,10 @@
 		8B01FE3F1D03098E008F7DD9 /* LLUIScrollViewAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				8B01FE731D03136D008F7DD9 /* New Group */,
+				8992A35E1D0D3AAB00E1096B /* CommonTools */,
+				8992A35A1D0D3A4B00E1096B /* animation3 */,
+				8992A3591D0D3A3E00E1096B /* animation2 */,
+				8B01FE731D03136D008F7DD9 /* animation1 */,
 				8B01FE431D03098E008F7DD9 /* AppDelegate.h */,
 				8B01FE441D03098E008F7DD9 /* AppDelegate.m */,
 				8B01FE461D03098E008F7DD9 /* ViewController.h */,
@@ -141,11 +216,13 @@
 			path = LLUIScrollViewAnimationsUITests;
 			sourceTree = "<group>";
 		};
-		8B01FE731D03136D008F7DD9 /* New Group */ = {
+		8B01FE731D03136D008F7DD9 /* animation1 */ = {
 			isa = PBXGroup;
 			children = (
+				8992A35B1D0D3AA300E1096B /* AnimationViewController1.h */,
+				8992A35C1D0D3AA300E1096B /* AnimationViewController1.m */,
 			);
-			name = "New Group";
+			name = animation1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +355,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8992A3611D0D3AB800E1096B /* AnimationViewController2.m in Sources */,
+				8992A3711D0D3B6A00E1096B /* MoreInfoView.m in Sources */,
+				8992A36A1D0D3B1C00E1096B /* UIView+SetRect.m in Sources */,
 				8B01FE481D03098E008F7DD9 /* ViewController.m in Sources */,
+				8992A3671D0D3ADA00E1096B /* Math.m in Sources */,
+				8992A35D1D0D3AA300E1096B /* AnimationViewController1.m in Sources */,
+				8992A36D1D0D3B2E00E1096B /* UIImage+ImageEffects.m in Sources */,
+				8992A3641D0D3AC000E1096B /* AnimationViewController3.m in Sources */,
 				8B01FE451D03098E008F7DD9 /* AppDelegate.m in Sources */,
 				8B01FE421D03098E008F7DD9 /* main.m in Sources */,
 			);
