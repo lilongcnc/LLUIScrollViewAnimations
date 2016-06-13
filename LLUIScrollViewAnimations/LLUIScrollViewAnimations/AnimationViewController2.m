@@ -20,6 +20,7 @@ static int viewTag = 0x11;
     for (int i = 0; i < self.picturesArray.count; i++) {
         
         MoreInfoView *show = [scrollView viewWithTag:viewTag + i];
+       // 这里其实应该是 y= 1*k+b
 //        show.imageView.x   = (X - i * self.contentView.width)+ _onceLinearEquation.b;
         show.imageView.x   =  (X - i * self.view.width);
     }

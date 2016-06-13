@@ -6,10 +6,14 @@
 //  Copyright © 2016年 lauren. All rights reserved.
 //
 
+/**
+ *  AnimationViewController1-AnimationViewController3:原作者地址:https://github.com/YouXianMing/Animations
+ *
+ */
 #import "ViewController.h"
-#import "AnimationViewController3.h"
 #import "AnimationViewController1.h"
 #import "AnimationViewController2.h"
+#import "AnimationViewController3.h"
 
 @interface ViewController (){
     NSArray *_titleArray;
@@ -22,7 +26,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _titleArray = @[@"UIScrollVIew视觉差效果动画",@"UIScrollView视觉差效果动画2",@"UIScrollView视差迷糊效果动画"];
+    _titleArray = @[@"UIScrollVIew视觉差效果动画",
+                    @"UIScrollView视觉差效果动画2",
+                    @"UIScrollView视差迷糊效果动画"];
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:flag];
     self.tableView.tableFooterView = [UIView new];
 }

@@ -25,7 +25,8 @@
     return atan2f(sideA, sideB);
 }
 
-CGFloat calculateSlope(CGFloat x1, CGFloat y1, CGFloat x2, CGFloat y2) {
+// calculateSlope和calculateConstant根据:y1 = k X1 + b 和 y2 = k X2 + b计算出k,b
+CGFloat calculateSlope(CGFloat x1, CGFloat y1, CGFloat x2, CGFloat y2) {//Slope:边坡
     
     if (x2 == x1) {
         
@@ -35,14 +36,16 @@ CGFloat calculateSlope(CGFloat x1, CGFloat y1, CGFloat x2, CGFloat y2) {
     return (y2 - y1) / (x2 - x1);
 }
 
-CGFloat calculateConstant(CGFloat x1, CGFloat y1, CGFloat x2, CGFloat y2) {
+CGFloat calculateConstant(CGFloat x1, CGFloat y1, CGFloat x2, CGFloat y2) {//Constant:常数
     
     if (x2 == x1) {
         
         return 0;
     }
     
-    return (y1*(x2 - x1) - x1*(y2 - y1)) / (x2 - x1);
+//    return (y1*(x2 - x1) - x1*(y2 - y1)) / (x2 - x1);
+    //或者
+    return (y1*x2 - x1*y2) / (x2 - x1);
 }
 
 + (instancetype)mathOnceLinearEquationWithPointA:(MATHPoint)pointA PointB:(MATHPoint)pointB {

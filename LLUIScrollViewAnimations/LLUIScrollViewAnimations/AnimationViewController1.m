@@ -96,9 +96,18 @@ static int viewTag = 0x11;
     for (int i = 0; i < self.picturesArray.count; i++) {
         
         MoreInfoView *show = [scrollView viewWithTag:viewTag + i];
+        //一元一次公式:y = kx + b
         show.imageView.x   = _onceLinearEquation.k * (X - i * self.view.width) + _onceLinearEquation.b;
     }
 }
+
+
+
+
+
+
+
+
 
 
 //隐藏Navigation的背景视图
