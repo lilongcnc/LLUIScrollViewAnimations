@@ -23,23 +23,29 @@ static int viewTag = 0x11;
 -(void)viewDidLoad{
     [super viewDidLoad];
     
+    
     MATHPoint pointA = MATHPointMake(0, -50);
-    MATHPoint pointB = MATHPointMake(self.view.width, self.view.width - 50);;
-    
-    
-    [self.scrollView removeFromSuperview];
+    MATHPoint pointB = MATHPointMake(self.view.width, self.view.width - 50);
     
     self.onceLinearEquation = [Math mathOnceLinearEquationWithPointA:pointA PointB:pointB];
+    
     
     // Init pictures data.
     self.picturesArray = @[[UIImage imageNamed:@"beauty"],
                            [[UIImage imageNamed:@"beauty"] blurImage],
+                           [[UIImage imageNamed:@"beauty"] blurImageWithMask:[UIImage imageNamed:@"1"]],
+                           [[UIImage imageNamed:@"beauty"] blurImageWithRadius:50],
+                           [[UIImage imageNamed:@"beauty"] blurImageAtFrame:CGRectMake(100, 100, 50, 50)],
+                           [[UIImage imageNamed:@"beauty"] scaleWithFixedWidth:20],
+                           [[UIImage imageNamed:@"beauty"] scaleWithFixedHeight:20],
+                           [[UIImage imageNamed:@"beauty"] croppedImageAtFrame:CGRectMake(100, 100, 40, 80)],
                            [[UIImage imageNamed:@"beauty"] grayScale]];
     
     // Init scrollView.
     CGFloat height = self.view.height;
     CGFloat width  = self.view.width;
     
+    [self.scrollView removeFromSuperview];
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, -StatusBarAndNavigationBarHeight, width, height+StatusBarAndNavigationBarHeight)];
     self.scrollView.delegate                       = self;
     self.scrollView.pagingEnabled                  = YES;
@@ -65,10 +71,10 @@ static int viewTag = 0x11;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGFloat X = scrollView.contentOffset.x;
-    
     for (int i = 0; i < self.picturesArray.count; i++) {
         
         MoreInfoView *show = [scrollView viewWithTag:viewTag + i];
+        //_onceLinearEquation.k = 1
         show.imageView.x   = _onceLinearEquation.k * (X - i * self.view.width) + _onceLinearEquation.b;
     }
 }
