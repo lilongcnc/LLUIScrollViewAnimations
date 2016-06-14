@@ -10,7 +10,6 @@
 #import "UIView+SetRect.h"
 #import "ScrollComputingValue.h"
 #import "ScrollTitleView.h"
-#import "LxDBAnything.h"
 
 @interface AnimationViewController4 ()<UIScrollViewDelegate>
 

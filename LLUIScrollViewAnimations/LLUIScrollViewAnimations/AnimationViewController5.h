@@ -1,15 +1,13 @@
 //
-//  BaseViewController.h
+//  AnimationViewController5.h
 //  LLUIScrollViewAnimations
 //
 //  Created by 李龙 on 16/6/14.
 //  Copyright © 2016年 lauren. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "LxDBAnything.h"
+#import "BaseViewController.h"
 
-
-@interface BaseViewController : UIViewController
+@interface AnimationViewController5 : BaseViewController
 
 @end

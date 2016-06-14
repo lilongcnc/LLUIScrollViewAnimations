@@ -15,8 +15,8 @@ static int type    = 0;
 static int viewTag = 0x11;
 
 @interface AnimationViewController1 ()
-@property (nonatomic, strong) UIScrollView  *scrollView;
 
+@property (nonatomic, strong) UIScrollView  *scrollView;
 @property (nonatomic, strong) Math          *onceLinearEquation;
 
 @end

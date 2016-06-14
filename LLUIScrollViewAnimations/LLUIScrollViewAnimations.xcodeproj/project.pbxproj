@@ -20,6 +20,7 @@
 		89B04CAA1D0FEB68009D8819 /* ScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B04CA81D0FEB68009D8819 /* ScrollTitleView.m */; };
 		89B04CAD1D0FEB9B009D8819 /* UIFont+Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B04CAC1D0FEB9B009D8819 /* UIFont+Fonts.m */; };
 		89B04CB01D0FEBAE009D8819 /* UIView+GlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B04CAF1D0FEBAE009D8819 /* UIView+GlowView.m */; };
+		89B04CB41D0FF9FB009D8819 /* AnimationViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B04CB31D0FF9FB009D8819 /* AnimationViewController5.m */; };
 		8B01FE421D03098E008F7DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01FE411D03098E008F7DD9 /* main.m */; };
 		8B01FE451D03098E008F7DD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01FE441D03098E008F7DD9 /* AppDelegate.m */; };
 		8B01FE481D03098E008F7DD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01FE471D03098E008F7DD9 /* ViewController.m */; };
@@ -75,6 +76,8 @@
 		89B04CAC1D0FEB9B009D8819 /* UIFont+Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fonts.m"; sourceTree = "<group>"; };
 		89B04CAE1D0FEBAE009D8819 /* UIView+GlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GlowView.h"; sourceTree = "<group>"; };
 		89B04CAF1D0FEBAE009D8819 /* UIView+GlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GlowView.m"; sourceTree = "<group>"; };
+		89B04CB21D0FF9FB009D8819 /* AnimationViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController5.h; sourceTree = "<group>"; };
+		89B04CB31D0FF9FB009D8819 /* AnimationViewController5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController5.m; sourceTree = "<group>"; };
 		8B01FE3D1D03098E008F7DD9 /* LLUIScrollViewAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLUIScrollViewAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B01FE411D03098E008F7DD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B01FE431D03098E008F7DD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +188,26 @@
 			name = animation4;
 			sourceTree = "<group>";
 		};
+		89B04CB11D0FF9DF009D8819 /* animation5 */ = {
+			isa = PBXGroup;
+			children = (
+				89B04CB21D0FF9FB009D8819 /* AnimationViewController5.h */,
+				89B04CB31D0FF9FB009D8819 /* AnimationViewController5.m */,
+			);
+			name = animation5;
+			sourceTree = "<group>";
+		};
+		89B04CB51D1001DA009D8819 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8B01FE431D03098E008F7DD9 /* AppDelegate.h */,
+				8B01FE441D03098E008F7DD9 /* AppDelegate.m */,
+				8B01FE4E1D03098E008F7DD9 /* LaunchScreen.storyboard */,
+				8B01FE511D03098E008F7DD9 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		8B01FE341D03098E008F7DD9 = {
 			isa = PBXGroup;
 			children = (
@@ -208,21 +231,19 @@
 		8B01FE3F1D03098E008F7DD9 /* LLUIScrollViewAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				89B04CB51D1001DA009D8819 /* Others */,
 				8992A35E1D0D3AAB00E1096B /* CommonTools */,
+				89B04CB11D0FF9DF009D8819 /* animation5 */,
 				89B04CA01D0FCBA8009D8819 /* animation4 */,
 				8992A35A1D0D3A4B00E1096B /* animation3 */,
 				8992A3591D0D3A3E00E1096B /* animation2 */,
 				8B01FE731D03136D008F7DD9 /* animation1 */,
-				8B01FE431D03098E008F7DD9 /* AppDelegate.h */,
-				8B01FE441D03098E008F7DD9 /* AppDelegate.m */,
 				8B01FE461D03098E008F7DD9 /* ViewController.h */,
 				8B01FE471D03098E008F7DD9 /* ViewController.m */,
 				89B04C9D1D0FA650009D8819 /* BaseViewController.h */,
 				89B04C9E1D0FA650009D8819 /* BaseViewController.m */,
 				8B01FE491D03098E008F7DD9 /* Main.storyboard */,
 				8B01FE4C1D03098E008F7DD9 /* Assets.xcassets */,
-				8B01FE4E1D03098E008F7DD9 /* LaunchScreen.storyboard */,
-				8B01FE511D03098E008F7DD9 /* Info.plist */,
 				8B01FE401D03098E008F7DD9 /* Supporting Files */,
 			);
 			path = LLUIScrollViewAnimations;
@@ -401,6 +422,7 @@
 				89B04CA91D0FEB68009D8819 /* ScrollComputingValue.m in Sources */,
 				8992A36A1D0D3B1C00E1096B /* UIView+SetRect.m in Sources */,
 				8B01FE481D03098E008F7DD9 /* ViewController.m in Sources */,
+				89B04CB41D0FF9FB009D8819 /* AnimationViewController5.m in Sources */,
 				8992A3671D0D3ADA00E1096B /* Math.m in Sources */,
 				89B04CAD1D0FEB9B009D8819 /* UIFont+Fonts.m in Sources */,
 				8992A35D1D0D3AA300E1096B /* AnimationViewController1.m in Sources */,

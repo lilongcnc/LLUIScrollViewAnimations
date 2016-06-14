@@ -15,6 +15,7 @@
 #import "AnimationViewController2.h"
 #import "AnimationViewController3.h"
 #import "AnimationViewController4.h"
+#import "AnimationViewController5.h"
 
 @interface ViewController (){
     NSArray *_titleArray;
@@ -30,6 +31,7 @@
     _titleArray = @[@"UIScrollVIew视觉差效果动画",
                     @"UIScrollView视觉差效果动画2",
                     @"UIScrollView视差迷糊效果动画",
+                    @"UIScrollView-UIImageView切换动画",
                     @"UIScrollView-UIImageView切换动画"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:flag];
@@ -86,6 +88,13 @@ static NSString *flag = @"cell";
             
             AnimationViewController4 *animationVC4 = [[AnimationViewController4 alloc] init];
             [self.navigationController pushViewController:animationVC4 animated:YES];
+            break;
+        }
+        case 4:
+        {
+            
+            AnimationViewController5 *animationVC5 = [[AnimationViewController5 alloc] init];
+            [self.navigationController pushViewController:animationVC5 animated:YES];
             break;
         }
             
