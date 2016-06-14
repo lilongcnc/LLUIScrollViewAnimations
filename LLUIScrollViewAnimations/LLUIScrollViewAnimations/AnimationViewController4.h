@@ -1,13 +1,13 @@
 //
-//  AnimationViewController3.h
+//  AnimationViewController4.h
 //  LLUIScrollViewAnimations
 //
-//  Created by 李龙 on 16/6/12.
+//  Created by 李龙 on 16/6/14.
 //  Copyright © 2016年 lauren. All rights reserved.
 //
 
 #import "BaseViewController.h"
 
-@interface AnimationViewController3 : BaseViewController
+@interface AnimationViewController4 : BaseViewController
 
 @end

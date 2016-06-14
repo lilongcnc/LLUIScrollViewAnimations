@@ -14,7 +14,8 @@
 static int type    = 0;
 static int viewTag = 0x11;
 
-@interface AnimationViewController1 ()<UINavigationControllerDelegate>
+@interface AnimationViewController1 ()
+@property (nonatomic, strong) UIScrollView  *scrollView;
 
 @property (nonatomic, strong) Math          *onceLinearEquation;
 
@@ -26,8 +27,6 @@ static int viewTag = 0x11;
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    
-    self.navigationController.delegate = self;
     self.view.backgroundColor = [UIColor whiteColor];
     MATHPoint pointA;
     MATHPoint pointB;
@@ -56,7 +55,7 @@ static int viewTag = 0x11;
     
     self.onceLinearEquation = [Math mathOnceLinearEquationWithPointA:pointA PointB:pointB];
     
-    type++;
+    type++;//每次进入增加
     
     // Init pictures data.
     self.picturesArray = @[[UIImage imageNamed:@"1"],
@@ -92,12 +91,16 @@ static int viewTag = 0x11;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGFloat X = scrollView.contentOffset.x;
+    LxDBAnyVar(X );
     
     for (int i = 0; i < self.picturesArray.count; i++) {
+        if (i>1) continue;
         
+        NSLog(@"-------------------------------- %d -----------------------------------",i);
         MoreInfoView *show = [scrollView viewWithTag:viewTag + i];
         //一元一次公式:y = kx + b
         show.imageView.x   = _onceLinearEquation.k * (X - i * self.view.width) + _onceLinearEquation.b;
+        LxDBAnyVar(show.imageView.x);
     }
 }
 
@@ -110,29 +113,6 @@ static int viewTag = 0x11;
 
 
 
-//隐藏Navigation的背景视图
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    //如果是当前控制器，则隐藏背景；如果不是当前控制器，则显示背景
-    //_UINavigationBarBackground这个就是Navigation的背景视图
-    if (viewController == self) {
-        for (UIView *view in [self.navigationController.navigationBar subviews]) {
-            if ([view isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
-                
-                //最好使用隐藏，指不定什么时候你又想让他出现
-                view.hidden = YES;
-                
-                //如果不想让它一直出现，那么可以移除
-                //                [view removeFromSuperview];
-            }
-        }
-    } else {
-        for (UIView *view in [self.navigationController.navigationBar subviews]) {
-            if ([view isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
-                view.hidden = NO;
-            }
-        }
-    }
-}
+
 
 @end

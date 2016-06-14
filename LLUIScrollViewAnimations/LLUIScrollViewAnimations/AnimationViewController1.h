@@ -11,11 +11,10 @@
 #import "UIView+SetRect.h"
 #import "Math.h"
 #import "LxDBAnything.h"
+#import "BaseViewController.h"
 
-@interface AnimationViewController1 : UIViewController<UIScrollViewDelegate>
+@interface AnimationViewController1 : BaseViewController<UIScrollViewDelegate>
 
 @property (nonatomic, strong) NSArray       *picturesArray;
-@property (nonatomic, strong) UIScrollView  *scrollView;
-
 
 @end

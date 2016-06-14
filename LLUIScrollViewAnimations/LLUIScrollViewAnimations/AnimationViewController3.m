@@ -8,12 +8,17 @@
 
 #import "AnimationViewController3.h"
 #import "UIImage+ImageEffects.h"
+#import "Math.h"
+#import "UIView+SetRect.m"
+#import "MoreInfoView.h"
 
 static int viewTag = 0x11;
 
-@interface AnimationViewController3 ()
+@interface AnimationViewController3 ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) Math          *onceLinearEquation;
+@property (nonatomic, strong) NSArray       *picturesArray;
+@property (nonatomic, strong) UIScrollView  *scrollView;
 
 @end
 
@@ -22,7 +27,6 @@ static int viewTag = 0x11;
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    
     
     MATHPoint pointA = MATHPointMake(0, -50);
     MATHPoint pointB = MATHPointMake(self.view.width, self.view.width - 50);
@@ -35,10 +39,10 @@ static int viewTag = 0x11;
                            [[UIImage imageNamed:@"beauty"] blurImage],
                            [[UIImage imageNamed:@"beauty"] blurImageWithMask:[UIImage imageNamed:@"1"]],
                            [[UIImage imageNamed:@"beauty"] blurImageWithRadius:50],
-                           [[UIImage imageNamed:@"beauty"] blurImageAtFrame:CGRectMake(100, 100, 50, 50)],
-                           [[UIImage imageNamed:@"beauty"] scaleWithFixedWidth:20],
-                           [[UIImage imageNamed:@"beauty"] scaleWithFixedHeight:20],
-                           [[UIImage imageNamed:@"beauty"] croppedImageAtFrame:CGRectMake(100, 100, 40, 80)],
+                           [[UIImage imageNamed:@"beauty"] blurImageAtFrame:CGRectMake(0, 64, 100, 100)],
+                           [[UIImage imageNamed:@"beauty"] scaleWithFixedWidth:50],
+                           [[UIImage imageNamed:@"beauty"] scaleWithFixedHeight:50],
+                           [[UIImage imageNamed:@"beauty"] croppedImageAtFrame:CGRectMake(0, 64, 100, 100)],
                            [[UIImage imageNamed:@"beauty"] grayScale]];
     
     // Init scrollView.

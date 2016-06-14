@@ -14,6 +14,7 @@
 #import "AnimationViewController1.h"
 #import "AnimationViewController2.h"
 #import "AnimationViewController3.h"
+#import "AnimationViewController4.h"
 
 @interface ViewController (){
     NSArray *_titleArray;
@@ -28,7 +29,8 @@
     
     _titleArray = @[@"UIScrollVIew视觉差效果动画",
                     @"UIScrollView视觉差效果动画2",
-                    @"UIScrollView视差迷糊效果动画"];
+                    @"UIScrollView视差迷糊效果动画",
+                    @"UIScrollView-UIImageView切换动画"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:flag];
     self.tableView.tableFooterView = [UIView new];
@@ -47,6 +49,7 @@ static NSString *flag = @"cell";
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     cell.textLabel.text = _titleArray[indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Thin" size:13];
     return cell;
 }
 
@@ -76,8 +79,13 @@ static NSString *flag = @"cell";
          
             AnimationViewController3 *animationVC3 = [[AnimationViewController3 alloc] init];
             [self.navigationController pushViewController:animationVC3 animated:YES];
+            break;
+        }
+        case 3:
+        {
             
-            
+            AnimationViewController4 *animationVC4 = [[AnimationViewController4 alloc] init];
+            [self.navigationController pushViewController:animationVC4 animated:YES];
             break;
         }
             
